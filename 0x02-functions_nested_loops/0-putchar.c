@@ -2,11 +2,12 @@
 
 /**
  * main - Entry point
- * 
+ *
  * Description: Prints _putchar, using putchar prototype
+ *
  * Return: Always 0.
  */
-int main(void) 
+int main(void)
 {
 char str[] = "_putchar";
 int ch;
