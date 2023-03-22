@@ -11,7 +11,8 @@ int main(void)
 int i, n = 4000000;
 long int prev = 1, curr = 2, next, sum = 0;
 
-for (i = 1; curr <= n; ++i) {
+for (i = 1; curr <= n; ++i)
+{
 if (curr % 2 == 0)
 sum += curr;
 next = prev + curr;
