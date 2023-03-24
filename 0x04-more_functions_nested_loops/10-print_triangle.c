@@ -1,8 +1,14 @@
-#include "holberton.h"
+#include "main.h"
 
+/**
+ * print_triangle - prints a triangle followed by a new line
+ * @size: size of the triangle to print
+ *
+ * Return: void
+ */
 void print_triangle(int size)
 {
-int i, j;
+int row, col;
 
 if (size <= 0)
 {
@@ -10,13 +16,25 @@ _putchar('\n');
 return;
 }
 
-for (i = 0; i < size; i++)
+/* iterate over each row of the triangle */
+for (row = 0; row < size; row++)
 {
-for (j = 0; j < size - i - 1; j++)
+/* iterate over each column of the current row */
+for (col = 0; col < size; col++)
+{
+/* print spaces for the left side of the triangle */
+if (col < size - row - 1)
+{
 _putchar(' ');
-
-for (j = 0; j <= i; j++)
+}
+/* print '#' for the right side of the triangle */
+else
+{
 _putchar('#');
-
+}
+}
+/* print a new line after each row of the triangle */
 _putchar('\n');
+}
+}
 
