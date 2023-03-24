@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_line - draws a straight line of underscores in the terminal
  * @n: number of times to print '_'

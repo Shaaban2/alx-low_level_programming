@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_square - prints a square of hashtags in the terminal
  * @size: size of the square
