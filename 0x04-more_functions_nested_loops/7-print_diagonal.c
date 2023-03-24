@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_diagonal - draws a diagonal line of backslashes in the terminal
  * @n: number of times to print '\'
