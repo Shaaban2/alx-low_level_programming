@@ -24,6 +24,5 @@ break;
 s++;
 }
 
-return (result * sign);
+return (result *sign);
 }
-
