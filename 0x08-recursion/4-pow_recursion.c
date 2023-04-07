@@ -1,11 +1,12 @@
 #include "main.h"
 /*
- * Recursive function to calculate the power of a
- * given base raised to an exponent.
- * @param base: the base integer
- * @param exponent: the exponent integer
- * @return: the result of base raised to the power of exponent
- */
+ *_pow_recursion - Calculate the power of a number recursively
+*@x: Base number
+*@y: Exponent
+*Return: Result of x raised to y
+*/
+
+
 int _pow_recursion(int x, int y)
 {
 	if (y < 0)
