@@ -1,3 +1,4 @@
+#include "main.h"
 /*
  * A helper function to determine if a given number is prime by recursively
  * checking if it has any divisors.
