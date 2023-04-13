@@ -6,9 +6,9 @@
  * @grid: pointer to the 2-dimensional array
  * @height: number of rows in the grid
  *
- * This function frees the memory allocated 
+ * This function frees the memory allocated
  * to a 2-dimensional grid of integers
- * created by the alloc_grid function. 
+ * created by the alloc_grid function
  * The height parameter specifies the number
  * of rows in the grid.
  */
