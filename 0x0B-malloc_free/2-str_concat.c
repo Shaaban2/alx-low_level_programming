@@ -8,32 +8,36 @@
  *
  * Return: pointer to the concatenated string, or NULL on failure
  */
-char *concatenate_strings(char *str1, char *str2)
+char *str_concat(char *s1, char *s2)
 {
-	char *result;
-	unsigned int len1, len2, i, j;
+	char *strout;
+	unsigned int i, m, l, limit;
 
-	if (str1 == NULL)
-		str1 = "";
-	if (str2 == NULL)
-		str2 = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	for (len1 = 0; str1[len1] != '\0'; len1++)
+	for (i = 0; s1[i] != '\0'; i++)
 		;
 
-	for (len2 = 0; str2[len2] != '\0'; len2++)
+	for (m = 0; s2[m] != '\0'; m++)
 		;
 
-	result = malloc(sizeof(char) * (len1 + len2 + 1));
+	strout = malloc(sizeof(char) * (i + m + 1));
 
-	if (result == NULL)
+	if (strout == NULL)
+	{
+		free(strout);
 		return (NULL);
+	}
 
-	for (i = 0; i < len1; i++)
-		result[i] = str1[i];
+	for (l = 0; l < i; l++)
+		strout[l] = s1[l];
 
-	for (j = 0; j <= len2; j++)
-		result[i + j] = str2[j];
+	limit = m;
+	for (m = 0; m <= limit; l++, m++)
+		strout[l] = s2[m];
 
-	return (result);
+	return (strout);
 }
