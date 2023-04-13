@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdlib.h>
 /**
  * ch_free_grid - frees a 2 dimensional array of char.
  * @grid: the array to be freed.
