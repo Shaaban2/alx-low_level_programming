@@ -10,18 +10,18 @@
 */
 char *_strdup(char *str)
 {
-    char *strout;
-    size_t len;
+char *strout;
+size_t len;
 
-    if (str == NULL)
-        return (NULL);
+if (str == NULL)
+return (NULL);
 
-    len = strlen(str);
-    strout = malloc(sizeof(char) * (len + 1));
+len = strlen(str);
+strout = malloc(sizeof(char) * (len + 1));
 
-    if (strout == NULL)
-        return (NULL);
+if (strout == NULL)
+return (NULL);
 
-    strcpy(strout, str);
-    return (strout);
+strcpy(strout, str);
+return (strout);
 }
