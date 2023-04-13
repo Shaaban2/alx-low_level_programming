@@ -2,12 +2,13 @@
 #include <stdlib.h>
 
 /**
- * concatenate_strings - concatenates two strings.
- * @str1: first string.
- * @str2: second string.
- *
- * Return: pointer to the concatenated string, or NULL on failure
+ * str_concat - concatenates two strings.
+ * @s1: the first string to be concatenated.
+ * @s2: the second string to be concatenated.
+ * Return: pointer to the newly allocated space in memory containing the
+ * concatenated strings.
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	char *strout;
