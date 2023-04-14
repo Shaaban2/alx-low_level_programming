@@ -12,37 +12,37 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-char *new_pointer; /* declare pointer for new memory block */
+char *nptr; /* declare pointer for new memory block */
 unsigned int i; /* counter variable */
 
 if (new_size == old_size) /* if new size is same as old size, return ptr */
 return (ptr);
 
-if ((new_size == 0) && (ptr != NULL)) /* if new size is 0, free ptr and return NULL */
+if ((new_size == 0) && (ptr != NULL))
 {
 free(ptr);
 return (NULL);
 }
 
-if (ptr == NULL) /* if ptr is NULL, allocate new memory block and return pointer to it */
+if (ptr == NULL) 
 {
-new_pointer = malloc(new_size);
-if (new_pointer == NULL)
+nptr = malloc(new_size);
+if (nptr == NULL)
 return (NULL);
 }
 
-if (new_size > old_size && (ptr != NULL)) /* if new size is larger than old size and ptr is not NULL */
+if (new_size > old_size && (ptr != NULL)) 
 {
-new_pointer = malloc(new_size); /* allocate new memory block */
-if (new_pointer == NULL)
-return (new_pointer);
+nptr = malloc(new_size); /* allocate new memory block */
+if (nptr == NULL)
+return (nptr);
 
 for (i = 0; i < old_size; i++) /* copy old memory block to new memory block */
-new_pointer[i] = *((char *)ptr + 1);
+nptr[i] = *((char *)ptr + 1);
 
 free(ptr); /* free old memory block */
 }
 
-return (new_pointer); /* return pointer to new memory block */
+return (nptr); /* return pointer to new memory block */
 }
 
