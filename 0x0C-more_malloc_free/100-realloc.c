@@ -24,14 +24,14 @@ free(ptr);
 return (NULL);
 }
 
-if (ptr == NULL) 
+if (ptr == NULL)
 {
 nptr = malloc(new_size);
 if (nptr == NULL)
 return (NULL);
 }
 
-if (new_size > old_size && (ptr != NULL)) 
+if (new_size > old_size && (ptr != NULL))
 {
 nptr = malloc(new_size); /* allocate new memory block */
 if (nptr == NULL)
