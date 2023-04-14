@@ -21,7 +21,7 @@ return (NULL);
 
 range = ((max + 1) - min); /* Calculate size of the array */
 
-p = malloc(range * sizeof(int)); /* Allocate memory for array */
+p = malloc(range *sizeof(int)); /* Allocate memory for array */
 
 if (p == NULL) /* Check if malloc failed */
 return (NULL);
@@ -33,4 +33,3 @@ for (i = 0; i < range; i++) /* Initialize array with values from min to max */
 
 return (p);
 }
-

@@ -27,7 +27,7 @@ if (p == NULL)
 return (NULL);
 
 for (i = 0; i < (nmemb * size); i++) /* initialize memory to zero */
-*((char *)(p) + i) = 0;
+*((char *)(p) +i) = 0;
 
 return (p);
 }
