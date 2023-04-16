@@ -11,9 +11,9 @@
 int main(int argc, char __attribute__((__unused__)) *argv[])
 {
 /* Subtract 1 from argc to exclude the program name */
-    printf("%d\n", argc - 1);
+printf("%d\n", argc - 1);
 
 /* Return success */
-    return (0);
+return (0);
 }
 
